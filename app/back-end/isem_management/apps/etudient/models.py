@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 
@@ -51,7 +52,8 @@ class Module(models.Model):
     
 class Matiere(models.Model):
     nomMatiere = models.CharField(max_length=255)
-    coefficient = models.FloatField()
+    coefficient = models.FloatField(validators=[MinValueValidator(0.0), MaxValueValidator(1.0)])
+    publier = models.BooleanField(default=False)
     module = models.ForeignKey(to=Module, on_delete=models.CASCADE)
 
     def __str__(self):

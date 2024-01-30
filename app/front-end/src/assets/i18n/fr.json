@@ -1,0 +1,113 @@
+{
+  "home": {
+    "connecter": "SE CONNECTER",
+    "inscrire": "S'INSCRIRE"
+    
+  },
+  
+  "auth": {
+    "login": {
+      "email": "Email",
+      "nom_utilisateur": "Nom d'utilisateur",
+      "mot_de_passe": "Mot de passe",
+      "pas_de_compte": "Vous n'avez pas un compte ?",
+      "inscription": "Inscrivez-vous ici",
+      "login": "se connecter",
+      "coff_pass": "Confirmez le mot de passe",
+      "forgot_pass": "récupérer mon mot de passe?",
+      "signOut": "Sortir"
+
+    }
+  },
+  "user": {
+    "deconnexion": "déconnexion",
+    "informations_personnels": "Informations Personnelles",
+    "info_perso": {
+      "photo_courant": "photo courant",
+      "importer_photo_profil": "Importer votre Photo du Profil",
+      "Nom": "Nom",
+      "Prenom": "Prénom",
+      "CIN": "CIN | Code d'identité National ",
+      "CNE": "CNE | Code National d'étudiant",
+      "Prenom_ar": "Prénom en arabe",
+      "Nom_ar": "Nom en arabe",
+      "date_naissance": "Date de naissance",
+      "lieu_naissance": "Lieu de naissance en Francais",
+      "lieu_naissance_ar": "Lieu de naissance en Arabe",
+      "adresse_residence": "Adresse de résidence",
+      "ville_naissance": "Ville de naissance en francais",
+      "ville_naissance_ar": "Ville de naissance en arabe",
+      "sexe": "Sexe",
+      "fonctionnaire": "Fonctionnaire",
+      "telephone": "Téléphone",
+      "Pays": "Pays",
+      "confirmer": "Confirmer",
+      "masculine": "Masculin",
+      "feminine": "Féminin"
+    },
+    "parcours": {
+      "BAC": "BACCALAUREAT",
+      "DUT": "Diplome Universitaire de Technologie",
+      "DEUG": "Diplome Universitaire Général",
+      "DEUST": "Diplome Universitaire Scientifiques et Techniques",
+      "BTS": "Brevet Technicien Supérieur ",
+      "LICENCE_PROFESSIONNELLE": "Licence Professionnelle",
+      "MASTER": "Master Fondamentale",
+      "MASTER_SPECIALISE": "Master Spécialisé",
+      "description-master-pro": "la disposition du diplome Master Spécialisé est non obligatoire pour passer au autres diplomes",
+      "DTS": "Diplome de Technicien Spécialisé",
+      "CI": "Diplome d'Ingénieur",
+      "LICENCE": "Licence",
+      "MASTER_EN_SCIENCE_TECHNIQUE": "Master en Science et Technique",
+      "DOCTORATE_EN_MEDICINE": "Doctorat en Médicine",
+      "description-master-st": "la disposition du Master sciences et techniques est non obligatoire pour passer au autres diplomes",
+      "description-medecine": "la disposition du doctorat en medecine est non obligatoire pour passer au autres diplomes",
+      "description-licence": "la disposition du diplome Licence est non obligatoire pour passer au autres diplomes",
+      "description-dts": "la disposition du Dts est non obligatoire pour passer au autres diplomes",
+      "description-bts": "la disposition du bts est non obligatoire pour passer au autres diplomes",
+      "description-deust": "la disposition du Deust est non obligatoire pour passer au autres diplomes",
+      "description-deug": "la disposition du Deug est non obligatoire pour passer au autres diplomes",
+      "decription-dut": "ne remplissez ce formulaire si vous seulement disposez dut sinon veuillez l'ignorer",
+      "decription-bac": "la disposition du diplome bac est obligatoire pour passer au autres diplomes",
+      "parcours": "Parcours",
+      "intitulé": "Intitulé",
+      "type": "Type",
+      "spécialité": "Spécialité",
+      "date": "date d'obtention",
+      "ville": "Ville",
+      "pays": "Pays",
+      "province": "Province",
+      "mention": "Mention",
+      "université": "Université",
+      "etablissement": "Etablissement",
+      "moyenne": "Moyenne génerale",
+      "diplome": "Diplôme",
+      "releves": "Relevés de notes",
+      "fichier_courant": "Fichier Courant",
+      "choix_fichier": "Choisir un fichier"
+    },
+    "parcours_": {
+      "professeur": "Professeur",
+      "sujet": "Sujet",
+      "action": "Action",
+      "laboratoire": "Laboratoire",
+      "ced": "ced",
+      "formation doctorale": "formation doctorale"
+    },
+    "postuler": "Postuler",
+    "postuler_details": {
+      "conseil_1": "Rechercher l'axe de recherche ou le titre du sujet",
+      "conseil_2": "En bas de la page cliquer sur postuler pour confirmer votre choix / POSTULER",
+      "conseil_3": "En bas de la page va apparaitre votre choix. Attention,certains axes de recherches ou sujets demandent de charger votre projet de recherche correspondant. Si c'est le cas charger votre projet de recherche en format pdf/"
+    },
+    "notifications": "Notifications",
+    "notifications_details": {
+      "conseil_1": "Nous vous invitons à participer à l'entretien de notre commission qui se tiendra le",
+      "liste_principale": "Liste principale",
+      "liste_d'attente": "Liste d'attente (dêpot de dossier de 14h à 16h au CED Dhar Mahraz)",
+      "aide_infos": "Aide et compléments d'information",
+      "conseil_2": "Cliquer sur Résultats pour voir les sujets dans lesquels vous êtes accepté en liste principale. Dans le cas où vous recevez une notification de résultats portant le sujet et la mention (Liste Principale ), imprimer la demande d'inscription correspondante à votre choix pour inscription et compléter votre dossier par les pièces définies dans document à fournir ci-dessous.",
+      "piece_fournir": "pièces a fournir"
+    }
+  }
+}

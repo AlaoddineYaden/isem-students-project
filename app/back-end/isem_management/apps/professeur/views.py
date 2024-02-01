@@ -6,6 +6,8 @@ from ..etudient.models import Etudient,Matiere
 from .models import Professeur, Enseigner
 # Create your views here.
 
+
+####### neeed to be fixed
 class ProfesseurEtudientsView(generics.ListAPIView):
     serializer_class = EtudientSerializer
     def get_queryset(self):

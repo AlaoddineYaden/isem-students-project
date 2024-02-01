@@ -15,4 +15,4 @@ class Enseigner(models.Model):
     professeur = models.ForeignKey(to=Professeur, on_delete=models.RESTRICT)
 
     def __str__(self):
-        return f'{self.professeur.user.first_name} {self.matiere.nomMatiere}'
+        return f'{self.professeur.user.first_name} ({self.matiere.nom})'

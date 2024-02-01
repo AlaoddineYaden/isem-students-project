@@ -83,6 +83,26 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql' if os.environ.get('DATABASE_HOST') else 'django.db.backends.sqlite3',
+#         'NAME': os.environ.get('DATABASE_NAME', BASE_DIR / 'db.sqlite3'),
+#         'HOST': os.environ.get('DATABASE_HOST'),
+#         'USER': os.environ.get('DATABASE_USER'),
+#         'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
+#     }
+# }
+
+# DATABASES = {
+#    'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'courses',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',  # Typically 'localhost' for local development
+#         'PORT': '3306',  # Typically '3306' for MySQL
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

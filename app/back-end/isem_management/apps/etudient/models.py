@@ -44,7 +44,7 @@ class Etudient(models.Model):
     
 class Module(models.Model):
     nomModule = models.CharField(max_length=255)
-    coefficient = models.FloatField()
+    coefficient = models.FloatField(validators=[MinValueValidator(0.0), MaxValueValidator(1.0)], default='0.0')
     filiere = models.ForeignKey(to=Filiere, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -52,7 +52,7 @@ class Module(models.Model):
     
 class Matiere(models.Model):
     nomMatiere = models.CharField(max_length=255)
-    coefficient = models.FloatField(validators=[MinValueValidator(0.0), MaxValueValidator(1.0)])
+    coefficient = models.FloatField(validators=[MinValueValidator(0.0), MaxValueValidator(1.0)], default='0.0')
     publier = models.BooleanField(default=False)
     module = models.ForeignKey(to=Module, on_delete=models.CASCADE)
 
@@ -62,12 +62,14 @@ class Matiere(models.Model):
 
 class Note(models.Model):
     note_type = models.CharField(max_length=255)
-    coefficient = models.FloatField()
+    note = models.FloatField(validators=[MinValueValidator(0.0), MaxValueValidator(20.0)], default='0.0')
+    coefficient = models.FloatField(validators=[MinValueValidator(0.0), MaxValueValidator(1.0)], default='0.0')
     annee = models.CharField(max_length=16)
     etudient = models.ForeignKey(to=Etudient, on_delete=models.RESTRICT)
+    matiere = models.ForeignKey(to=Matiere, on_delete=models.CASCADE, default=None, null=True, blank=True)
 
     def __str__(self):
-        return f'{self.etudient.user.first_name} {self.note_type}'
+        return f'{self.etudient.user.first_name} / {self.matiere.nomMatiere} / {self.note_type}'
     
 
     

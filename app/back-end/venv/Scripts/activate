@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\alao\projects\isem marks\venv"
+VIRTUAL_ENV="D:\alao\projects\isem marks\app\back-end\isem_management\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

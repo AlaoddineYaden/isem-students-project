@@ -21,21 +21,21 @@ class FiliereSerializer(serializers.ModelSerializer):
 
 class EtudientSerializer(serializers.ModelSerializer):
     filiere = FiliereSerializer()
-    # user = UserSerializer()
     nom = serializers.CharField(source='user.last_name')
     prenom = serializers.CharField(source='user.first_name')
     email = serializers.ReadOnlyField(source='user.email')
     class Meta:
         model = Etudient
-        
         fields = '__all__'
 
 class ModuleSerializer(serializers.ModelSerializer):
+    
     class Meta:
         model = Module
         fields = '__all__'
 
 class MatiereSerializer(serializers.ModelSerializer):
+    module = ModuleSerializer()
     class Meta:
         model = Matiere
         fields = '__all__'
